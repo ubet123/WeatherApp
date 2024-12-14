@@ -34,6 +34,8 @@ const WeatherCard = ({ weatherData }) => {
             return "🌦️";
             case "light snow":
             return "🌨️";
+            case "mist":
+            return "🌫️";
 
       default:
         return "🌈";
