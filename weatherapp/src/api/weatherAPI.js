@@ -1,4 +1,4 @@
-const API_KEY = "2b9f1405e7f17c4ca878e6433a9db51a"; // Replace with your actual OpenWeatherMap API key
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; 
 
 export const fetchWeatherData = async (city) => {
   try {

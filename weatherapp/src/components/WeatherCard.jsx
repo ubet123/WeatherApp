@@ -36,6 +36,8 @@ const WeatherCard = ({ weatherData }) => {
             return "🌨️";
             case "mist":
             return "🌫️";
+            case "drizzle":
+              return "🌦️";
 
       default:
         return "🌈";
