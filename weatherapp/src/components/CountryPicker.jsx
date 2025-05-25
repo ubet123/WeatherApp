@@ -7,6 +7,7 @@ const CountryPicker = ({ setWeatherData }) => {
 
   const handleInputChange = (e) => {
     setCity(e.target.value);
+   
   };
 
   const handleSearch = async () => {
@@ -14,7 +15,7 @@ const CountryPicker = ({ setWeatherData }) => {
     if (data) {
       setWeatherData(data);
     } else {
-      alert("City not found or error fetching data. Please try again.");
+      // alert("City not found or error fetching data. Please try again.");
     }
   };
 
@@ -25,6 +26,7 @@ const CountryPicker = ({ setWeatherData }) => {
         type="text"
         value={city}
         onChange={handleInputChange}
+        
         placeholder="Enter City"
       />
       <button onClick={handleSearch}>Search</button>
